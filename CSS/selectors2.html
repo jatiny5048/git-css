@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+<body>
+    <!-- This is an example of attribute base selector: It selects by attribute name(Without condition)  -->
+    <style>
+        a[target]{
+            color: blue;
+            background-color: yellow;
+        }
+            
+        
+    </style>
+    <a href="#">Google</a>
+    <a target="_blank" href="">Youtube</a>
+    <hr>
+
+    <!-- This is an example of attribute base selector: It selects by attribute name(With condition)  -->
+    <style>
+        a[target="_parent"]{
+            color: green;
+            background-color: lightskyblue;
+        }
+    </style>
+    <a href="#">Instagram</a>
+    <a target="_parent" href="#">Facebook</a>
+    <hr>
+
+    <!-- This is an example of Cominator selector: It select childs inside a tag(It not take child outside the tag)  -->
+    <style>
+        ul li{
+            color: red;
+            background-color: blue;
+        }
+    </style>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <li>Four</li>  <!--This child is not styled because it is outside the tag -->
+    <hr>
+
+    <!-- This is an example for selection of siblings:  -->
+    <style>
+        img~p{
+            color: green;
+            background-color: pink;
+        }
+    </style>
+    <div>
+    <img src="" alt="">
+    <p>Amity University</p>
+    <p>Haryana</p>
+    </div>
+    <hr>
+
+    <!-- This is an example of adjacent siblings: It selects the siblings which is most closest:  -->
+    <style>
+        h2+p{
+            color: skyblue;
+            background-color: red;
+        }
+    </style>
+    <div> 
+    <h2>Welcome to Amity</h2>
+    <p>We provide you the best education</p>
+    <p>Thanks for visiting</p>     <!-- It is not selected because it is not the closest siblings  -->
+    </div>
+
+
+
+
+</head>   
+</body>
+</html>

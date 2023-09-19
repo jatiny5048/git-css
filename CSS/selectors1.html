@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <!-- This is an example of CSS element selector  -->
+    <style>
+      p{
+        text-align: center;
+        color: blue;
+      }
+    </style>
+
+<body>
+    <p>This is para 1</p>
+    <p>This is para 2</p>
+    <hr>
+    <!-- This is an example of CSS ID selector: Here we can select a specific element my mention a ID -->
+    <style>
+        #para2{
+            color: green;
+            background-color:yellow;
+        }
+    </style>
+    <p>This is our university</p>
+    <p id="para2">Located in Haryana</p>
+    <hr>
+
+     <!-- This is an example of CSS class selector(same element): It selects element with a same class attribute -->
+     <style>
+         .center{
+                  color: orange;
+                  text-decoration: wavy;
+                  background-color: green;
+                  text-align: center;
+         }
+     </style>
+     <h1 class="center" > Amity University is located in Haryana</h1>
+     <p class="center">There are many courses available in University</p>
+     <h2 class="background-color">Amity specially known for LAW</h2>
+     <hr>
+     <!-- This is an example of CSS class selector(specific element): It selects element with specific class attribute  -->
+     <style>
+          h3.text-decoration{
+            color: purple;
+            text-align: end;
+            background-color: lightgrey;
+          }
+          }
+     </style>
+     <h3 class="text-decoration">BCA is also a good course</h3>
+     <h3 class="text-decoration">The fee structure of the course is high</h3>
+     <p class="text-decoration">But the value of degree is better than other universities</p>
+     <hr>
+
+     <!-- This is an example of group selector: Use to select all element with same style definitions  -->
+     <style>
+      h2,h4,p{
+        text-align: center;
+        color: brown;
+        background-color: lightgoldenrodyellow;
+      }
+     </style>
+     <h2> Full stack developmemt is a demanding course</h2>
+     <h4>It includes HTML CSS and JS</h4>
+     <p>We can style our websites with CSS</p>
+     <hr>
+     <!-- This is an example of universal selector(*): Select all elements on the pages 
+     as we do all the code in one page this apply to all abobe code we done  -->
+     <style>
+      *{
+        text-align: center;
+        color: brown;
+        background-color: lightskyblue;
+      }
+     </style>
+     <h2>HTML is a easy language</h2>
+     <h3>CSS is little bit complex then HTML</h3>
+     <h4>This is a selector in CSS</h4>
+    </head>
+</body>
+</html>
+    

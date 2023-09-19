@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+<style>
+    .box{
+        height: 100px;       /* Linear gradient is for Sequence(Used mostly) */
+        background-image: linear-gradient(to right,pink,purple);  /* From left to right the color will show pink to purple (We can also use top,left and bottom) */
+        background-image: linear-gradient(to top right,blue,yellow);
+        background-image: linear-gradient(red 20px,orange 40px,blue 60px);
+    }
+
+    .box2{         /* Radial radient is for circular color(Less use) */
+        height: 150px;
+        background-image: radial-gradient(green,pink,blue,yellow);
+    }
+
+    .box3{
+        height: 250px;      /* Make a circle */
+        background-image: radial-gradient(circle,purple,orange,green);
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap');
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    z-index: top;   /*Isse ye hamesha top pe rhega */ 
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 20px 0px;
+    vertical-align: middle;
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0px 20px;
+    padding-bottom: 0px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(144, 142, 142);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+article h1{
+    font-size: 40px;
+}
+
+.content{
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 10px 80px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.content>section{
+    margin: 100px 0px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.bot-icon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+

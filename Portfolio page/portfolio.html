@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Victor+Mono:wght@100&display=swap');
+      
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Victor Mono', monospace;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgba(14, 14, 13, 0.626);
+            box-shadow: 0px 2px 10px rgba(21, 21, 18, 0.815);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;  /* It removes the dots from lists */
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: #07e0fd;
+        }
+
+        .left{
+            position: relative;
+            left: -150px;
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstSection > div{
+            width: 40%;
+        }
+
+        .leftSection{
+            font-size: 2.5rem;        
+        }
+
+        .rightSection img{
+            width: 700px;
+            height: 480px;
+        }
+
+        .gray{
+            color: rgb(148, 145, 145);
+        }
+
+        #element{
+            color: rgb(101, 89, 89);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr{
+            border: 0;
+            background: rgb(166, 166, 51);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondSection h1{
+            font-size: 1.8rem;
+        }
+
+        .text-gray{
+            color: rgb(228, 235, 3);
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 50vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;  
+            margin: 0 100px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: rgb(169, 251, 6);
+            width: 170px;
+            font-size: 14px;
+        }
+
+        .image-top{
+            width: 29px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        footer{
+            background-color: rgba(14, 14, 13, 0.626);
+            height: 200px;
+            box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.815);
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        .relative{
+            position: relative;
+            top:7px;
+        }
+
+        .relative1{
+            position: relative;
+            top:12px;
+        }
+
+        .relative2{
+            position: relative;
+            top:16px;
+        }
+
+        .social-media{
+            font-size: 1.8rem;
+        }
+
+        .ig{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+
+        .fb{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .youtube{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 35px;
+        }
+
+        .twitter{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 45px;
+        }
+
+        .mail-img{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .email{
+            font-size: 1.0rem;
+            position: relative;
+            left: 75px;
+            top: 39px;
+        }
+
+        .hr1{
+            position: relative;
+            top: 25px;
+            width: 175px;
+        }
+
+        .portfolio-img{
+            position: relative;
+            width: 40px;
+        }
+
+        .logo{
+            position: relative;
+            width: 25px;
+            top: -23px;
+            left: -30px;
+        }
+
+        .copyright{
+            position: relative;
+            top: 100px;
+            left: -290px;
+            color: black;
+        }
+
+        .year{
+            position: relative;
+            top: 100px;
+            left: -293px;
+            color: black;
+        }
+
+        .copyright-logo{
+            position: relative;
+            width: 13px;
+            height: 13px;
+            top: 103px;
+            left: -380px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="portfolio-img" src="https://cdn-icons-png.flaticon.com/128/3308/3308315.png" alt="portfolio img">
+            <div class="left">Jatin's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a target="_blank" href="services.html">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,my name is
+             <span class="gray">Jatin</span> 
+            <div> & I am a aspiring</div>
+            <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="https://www.dharmishi.com/img/vectors/developer.png" alt="Developer PNG"></div>
+        </section>
+    <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1 >Past Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="https://cdn-icons-png.flaticon.com/128/9512/9512206.png" alt="HTML Developer png">
+                    <div class="vertical-title">
+                        HTML Developer (Experience-6 Months)
+                    </div>
+                    <div class="vertical-desc">
+                        I have a solid understandig of HTML and its various elements. I would be proficient in creating and structuring web pages using HTML tags,attributes, and attributes values and many more...
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://cdn-icons-png.flaticon.com/128/2779/2779775.png" alt="Web Designer png">
+                    <div class="vertical-title">
+                        Web Designer (Experience-3 Months)
+                    </div>
+                    <div class="vertical-desc">
+                         I have some foundational skills in designing and creating visually appealing websites.I have been exposed to various aspects of a web design and gained hand-on experience with basic design tools and principles...
+                    </div>
+                </div>
+                <div class="vertical"> <img class="image-top" src="https://cdn-icons-png.flaticon.com/128/4427/4427720.png" alt="Video Editor png">
+                    <div class="vertical-title">
+                        Video Editor (2020-23)
+                    </div>
+                    <div class="vertical-desc">
+                        I would have developed a strong foundation in video editing and post-production skills.Over this period, I would have worked on various projects and gained valuable hands-on experience using video editing software and other relevant tools...
+                    </div></div>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Jatin's Portfolio:</h3>
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/128/3308/3308315.png" alt="logo png">
+            </div>
+            <h5 class="copyright"><i>Copyright</i></h5>
+            <h5 class="year">2023</h5>
+            <img class="copyright-logo" src="https://cdn-icons-png.flaticon.com/128/1627/1627309.png" alt="copyright img">
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li class="relative">About</li>
+                    <li class="relative1">Privacy Policy</li>
+                    <li class="relative2">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Careers</li>
+                    <li class="relative">FAQs</li>
+                    <li class="relative1">Terms of Services</li>
+                    <li class="relative2">Customer Care</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li class="social-media"><strong>Follow Us:</strong></li>
+                   <a target="_blank" href="https://www.instagram.com/jatin.ydv15?igshid=ZDc4ODBmNjlmNQ=="><img class="ig" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="instagram png"></a></li>
+                   <a  target="_blank" href="https://www.facebook.com"><img class="fb" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="facebook png"></a></li>
+                   <a target="_blank" href="https://www.youtube.com/@code-n-fun1464"><img class="youtube" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="youtube png"></a>
+                   <a target="_blank" href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="twitter png" class="twitter"></a>
+                    <hr class="hr1">
+                    <li class="email"><a href="jatinydv1504@gmailcom"></a><strong>Mail Us</strong></li>
+                   <a target="_blank" href="https://mail.google.com"><img class="mail-img" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="email png"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HTML Developer','Web Designer','Video Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>

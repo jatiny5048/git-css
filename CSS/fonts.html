@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+</head>
+<!-- You can use many fonts easily by simply going to the font-family anf if you want to add more fonts then simply go to google fonts adn select the font(then press regular) and copy both the link -->
+<style>
+    h1,p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100px;
+    }
+    h2{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic; /* You can change the font style also */
+    }
+    h3{
+        font-family: 'Agdasima', sans-serif; /* Here we apply google fonts by copying the link from google fonts website */
+        font-size: 50px; /* Here we change the font size */
+
+    }
+    .min-height{
+        background-color: yellow;
+        min-height: 120px; /* In this case min height is applied */
+    }
+    .min-height2{
+        background-color: skyblue;
+        min-height: 10px; /* There is no effect on min height when the px are less it will cover whole text itself */
+    }
+    .max-height{
+        background-color: gray;
+        max-height: 200px; /* If text is less and the max-height is more there is no effect on max-height property it gives height only upto where the texts ends */
+    }
+    .max-height2{
+        background-color: lightgreen;
+        max-height: 60px; /* The content is larger than the max height it means the text will overflow */
+        max-width: 800px; /* We can also set the min/max-width for the content */
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque alias expedita corrupti provident debitis ratione. Facilis repellat ab aperiam delectus veniam consequuntur blanditiis quod, provident, illo eaque rerum? Tenetur eaque mollitia cumque sunt deleniti itaque eligendi architecto inventore asperiores velit? Nemo, officia harum assumenda aliquid quibusdam quos ipsum enim error quaerat, distinctio consectetur eos voluptatum earum vel nostrum quia qui quasi recusandae incidunt esse non! Dolorum fugit accusantium error rem, voluptates impedit. Quaerat autem accusantium totam rerum eos. Dolor debitis voluptatibus laborum vero est cumque architecto aut officiis, consequuntur vitae a facere deleniti esse voluptas nesciunt provident cum totam, distinctio illo, dolorum repudiandae omnis! Eaque enim minima expedita nisi eligendi nemo quasi? Ipsa, aut optio dolore molestias nemo fugit, vitae eius alias cupiditate, aliquam illum officiis sequi error in commodi eaque? Soluta, vel. Explicabo labore, alias est nihil error doloribus eius illum consequuntur suscipit voluptates beatae tenetur. Voluptate suscipit incidunt, dolorem dolores vitae fuga assumenda placeat laborum magnam obcaecati illo praesentium quia natus, nesciunt ipsum adipisci id nulla magni, inventore in veniam. Error aperiam necessitatibus deserunt omnis a consectetur nobis vitae cum corporis, doloribus ratione quia eius sit autem officia et at optio totam. Deserunt obcaecati nulla sunt quasi mollitia blanditiis molestias quibusdam pariatur id autem nostrum, neque eum, corporis omnis maxime odit explicabo aperiam tempore? Ipsa omnis, deleniti illo a optio adipisci perspiciatis, saepe atque nulla quod odit ea aut asperiores, reiciendis dolorem esse consequuntur iure consectetur quidem pariatur nihil. Quibusdam vitae natus mollitia officiis asperiores, beatae minima veritatis tempora animi eum ullam ratione quisquam, quas voluptatem! Quod optio quisquam facere. Quae perferendis velit in sapiente corporis natus fugiat similique eligendi est aperiam voluptatem vel sunt libero error at autem ratione nemo, repellat esse saepe culpa rem fuga nostrum recusandae! Omnis, amet minus? Dolor esse tenetur non tempora.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error sequi magnam deserunt voluptatibus commodi at. Dignissimos quaerat in iste laudantium id laboriosam hic fugiat reiciendis minima accusamus qui ad veniam perferendis quibusdam tempora nobis nisi aut accusantium nesciunt dolorem, aliquid adipisci voluptate? Odio similique rem dignissimos quasi libero cumque enim mollitia expedita quod pariatur, dolor, esse reprehenderit voluptatibus iusto recusandae voluptate omnis suscipit, veniam ducimus ut quas amet non? Ab, at. Alias consequuntur nesciunt quae eos ullam quis ipsam officia, quas illum reprehenderit! Nam modi odit accusamus cupiditate pariatur ullam libero, aperiam eum cum nemo ratione incidunt corrupti quam veniam magni illum aut vitae, perspiciatis omnis quisquam blanditiis earum. Veritatis a eum, sapiente quasi magnam numquam aspernatur tenetur quo incidunt corporis? Architecto, aspernatur quia consectetur atque reiciendis officia odit voluptate provident veniam sit ratione deleniti minus iste nisi excepturi dolorem nostrum totam minima omnis fugit non quisquam dolor velit molestiae? Ex vel ducimus, molestiae, hic ipsum consectetur porro voluptate pariatur ipsam facilis adipisci maiores autem magnam! Libero mollitia nam animi consectetur optio totam vel nisi sed rerum, fuga asperiores quas error quibusdam accusamus excepturi veniam ab nulla dolores? Quasi libero unde numquam ducimus dicta nulla expedita dolorum voluptas aut?</p>
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, maiores!</h3>
+    <!-- In min height if the content is samller then min height applied, and if the content is larger than min height
+    property has no effect: First we take a example for(when content is smaller) -->
+    <p class="min-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis suscipit nobis veritatis, asperiores nisi, voluptatibus magni necessitatibus, ea eveniet eius aut consequatur totam velit non nihil impedit? Ratione, numquam porro.</p>
+    <!-- Let take another example  of min height when the content is larger than min height  -->
+    <p class="min-height2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptas quae dolore quos, blanditiis doloremque tenetur quis hic suscipit laudantium vel dolorem voluptatum consequuntur sed, beatae odio sunt, modi consequatur cupiditate adipisci molestias quasi. Veritatis, porro esse non laborum voluptas accusantium assumenda facilis, cupiditate culpa perspiciatis ut ipsam earum, neque sapiente accusamus praesentium velit! Ipsum perspiciatis natus dolor quaerat! Quasi quaerat cupiditate totam, animi voluptatibus veniam ab nam at odit, neque voluptas impedit quod dicta facilis enim minus sit, quos molestias dolorum nisi non nostrum aut. Quaerat ipsam voluptatibus, vitae impedit omnis enim quibusdam perspiciatis repellendus tempore, dolorum est amet.</p>
+    <!-- Now take example for max height when the content is smaller or larger than the max height -->
+    <p class="max-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat? Modi, deleniti tempora quaerat laudantium consequuntur labore libero alias dicta?</p>
+    <p class="max-height2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempore eius dignissimos unde voluptatem veritatis sit, adipisci iure. Inventore totam, rem officiis vero dicta similique, ad aliquam modi quisquam consequuntur consequatur fugit ab? Incidunt illo, sit fugiat doloremque cupiditate, neque odit error officiis maxime numquam voluptatem consequatur vero veritatis! Laborum mollitia modi officiis numquam at distinctio provident sunt vitae eius debitis architecto a dolore, error delectus accusantium iure amet aliquid ipsa, necessitatibus odit illo cum itaque. Veritatis perspiciatis cumque dolores quidem nisi iure perferendis, soluta iusto eveniet sint esse aliquam officiis eius similique ipsam fugiat error libero. Quis, harum voluptatum. Delectus deserunt saepe nulla blanditiis sed beatae quae velit impedit quos, accusantium itaque praesentium asperiores ab a consectetur. Assumenda, eum perspiciatis, error dignissimos fugit dolor beatae laudantium minus esse eius consequatur quia voluptates. Sequi voluptate minima odio nobis repudiandae, modi facere rem odit animi, amet beatae? Esse tempore molestias vero dolor soluta quam non minima, nam aspernatur optio. Deserunt dolores facere nobis nam mollitia! Iure expedita provident non illum ipsam rerum aut atque tempora itaque, eaque totam quidem fugiat doloremque ducimus! Reprehenderit, perspiciatis laboriosam? Vitae incidunt iure voluptatibus adipisci, dolorum velit porro ut debitis, ipsam nesciunt unde magnam. Vero error sed odit ipsum mollitia, vitae eos optio obcaecati quisquam suscipit nihil recusandae debitis cupiditate molestiae adipisci facilis dolorem modi doloribus amet veniam. Mollitia, quisquam vero voluptate voluptas saepe ratione inventore. Saepe architecto esse ex amet minus consequatur reprehenderit illo omnis eligendi aut unde, quaerat voluptas adipisci quod excepturi nihil sunt blanditiis sed. Esse similique odit praesentium earum modi, repellendus incidunt adipisci aliquam recusandae voluptas suscipit ea autem, debitis consectetur laudantium. Commodi, aperiam? Adipisci ad excepturi, quod, hic corporis minus veritatis ipsam tempore molestias ratione quae ullam et fugit provident obcaecati laudantium voluptatum. Aliquam rem repudiandae sapiente voluptatum. Totam, fugit adipisci!</p>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content in CSS</title>
+</head>
+<style>
+    .items{
+    width: 30px;
+    height: 20px;
+    background-color: yellow;
+    color: green;
+    border: 2px solid red;
+      }
+
+    .container-start{
+        display: flex; /* Here we change the direction for better understanding */
+        justify-content: start;
+        border: 2px solid greenyellow;
+    }
+
+    .container-end{                  /* The elements start from end */
+        display: flex;
+        justify-content: end;
+        border: 2px solid black;
+    }
+
+    .container-between{              /* It will make space between all elements */
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid goldenrod;
+    }
+
+    .container-around{              /* It will make space around all the elements from both left-right or top-bottom */
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid gray;
+    }
+
+    .container-evenly{               /* It will set a equal amount of space on the both side of a element */
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid lightcoral;
+    }
+
+    .container-center{               /* Place all the elements in the center */
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <p>Justify-Content:Start(Set by default)</p>
+    <div class="container-start">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Justify-Content:End</p>
+    <div class="container-end">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Justify-Content:space-between</p>
+    <div class="container-between">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Justify-Content:space-around</p>
+    <div class="container-around">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Justify-Content:space-evenly</p>
+    <div class="container-evenly">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Justify-Content:space-center</p>
+    <div class="container-center">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    
+</body>
+</html>

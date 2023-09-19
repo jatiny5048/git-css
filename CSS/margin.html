@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selector(pseudo)</title>
+</head>
+<body>
+    <!-- This is an example of hover(pseudo selector):When we move cursor on text then styles apply(represented by ":")  -->
+    <style>
+        h1:hover{
+            color: red;
+        }
+    </style>
+    <h1>Welcome to Amity University Gurugram Haryana</h1>
+    <hr>
+    <!-- This is an exampleof focus(pseudo selector):When we click on text the styling applies  -->
+    <style>
+        button:focus{
+             color: green;
+             background-color: yellow;
+        }  
+    </style>
+    <button>Submit Application</button>
+    <hr>
+    <!-- This is an example of first-child(pseudo selector):It styles only fist child of the tag  -->
+    <style>
+        div:first-child{
+            color:blue;
+            background-color: yellow;;
+            display: inline; /*  Here we apply inline to give bgc to only text background  */
+        }
+    </style>
+    <div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>  <!-- Styles aaply on this also as we use last child in below tag-->
+    </div>
+    <hr>
+    <!-- This is an example of last child(pseudo selector):It styles only last child of the tag  -->
+    <style>
+        div:last-child{
+            color: green;
+            background-color: pink;
+            display: inline;
+        }
+    </style>
+    <div>
+        <div>Four</div> <!-- Styles apply on this also as we previously use first child above -->
+        <div>Five</div>
+        <div>Six</div>
+    </div>
+    <hr>
+    <!-- Now these are some special pseudo selectors:First we take "after" use to add something or style after the tag content(represented by "::")  -->
+    <style>
+        h2::after{
+            content:"Amity University Haryana";
+            color: skyblue;
+        }
+    </style>
+    <h2>This is the official website of</h2>
+    <hr>
+    <!-- This is an example of before(special pseudo):It styles or add something before the tag content  -->
+    <style>
+        h3::before{
+            content: "Click Here";
+            color: orange;
+        }
+    </style>
+    <h3>To apply for a Course</h3>
+    <hr>
+    <!-- This is an example of first line/word/letter:It styles only fist line/word/letter of the tag  -->
+    <style>
+          p::first-line{
+            color: yellow;
+          }
+          p::first-letter{
+            background-color: grey;
+          }
+    </style>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, minima?<br>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem! <br>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*  First we take an example of static position : They are default static positioned, there are no changes can be made by giving top,right,bottom and left properties  */
+    .static{
+        position: static;
+        border: 4px solid red;
+        left: 20px; /* This property will not apply as static position is set by default and no changes can be made except color and bg  */
+    }
+
+    /* Now we take an example of relative position : We can set the top,right,bottom and left properties and can adjust the element, In this the element is away from its normal position  */
+    .relative{
+        position: relative;
+        border: 5px solid blue;
+        top: 10px;
+        left: 30px; /* Here these both properties will works on the element  */
+    }
+
+    /* This is an example for the absolute position : The property will work from top of the screen and it can also overlap elements */
+    .absolute{
+        position: absolute; /* The properties will apply from the top of screen */
+        border:6px solid green;
+        top: 30px;
+    }
+    
+    /* This is an example of fixed position : It always in the same place even if the page is scrolled  */
+    .fixed{
+        position: fixed;
+        border: 3px solid purple;
+    
+    }
+
+    /* Example of sticky position : Position based on user scroll position, it toggles between relative and fixed and it is relative until position met the viewport(jitna bina scroll kre ek screen pe dikhta hai) then it sticks in place like fixed position  */
+    .sticky{
+        position: sticky;
+        border: 5px yellow solid;
+        top: 0;
+    }
+</style>
+<body>
+    <!-- static -->
+      <div class="static">This div element has static position</div>  
+    
+    <!-- relative -->
+      <div class="relative">This div element has relative position</div>
+
+    <!-- absolute -->
+      <div class="absolute">This element has absolute position</div>
+
+    <!-- fixed -->
+      <div class="fixed">This element has fixed position</div>
+
+    <!-- sticky -->3
+      <div class="sticky">This element has sticky position</div>
+</body>
+</html>

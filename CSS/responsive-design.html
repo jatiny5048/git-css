@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+</head>
+<style>
+    .box{
+        height: 100vh;
+    }
+
+    h1{
+        color: aqua;
+    }
+/* @media screen and (max-width:576px) {      /* 570px and down (For large device as we use max width)
+    .box{
+            background-color: purple;       /* If the sixe is less than 576px thrn color will change into purple (576px is the break point)
+         } 
+} (For performing min width function we comment this) */
+
+@media screen and (min-width:576px) {             /* Small device:576px and up if the size is max than 576px then the color will change intp green */  
+    .box{
+        background-color: green;
+    }
+}    
+
+@media screen and(min-width:768px){
+    .box{
+        background-color: blue;
+    }
+} 
+
+@media screen and(min-width:1200px){
+    .box{
+        background-color: yellow;
+    }
+} 
+
+</style>
+<body>
+    <div class="box">
+        <h1 class="screen">width :</h1>
+    </div>
+</body>
+</html>

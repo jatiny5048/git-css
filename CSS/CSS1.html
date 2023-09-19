@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS intro</title>
+<style>
+    h1{
+        font-size: 50px;
+        color: yellow;
+        background-color: black;
+        display: inline;
+    }
+</style>
+<!-- This link is external css as it written below the internal it would be run  -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>This is an example of CSS</h1>
+    <h2 style="font-size: 40px; color: blue; background-color: black ; text-decoration: line-through; text-align: center;">This is an example of inline CSS</h2>
+    <!-- What happen if we put both inline and internal css ,which one would work? inline or internal let's check -->
+    <style>
+        h3{
+            font-size: 50px; color: pink; background-color: #8d1717;
+        }
+    </style>
+    <h3 style="font-size: 70px;"> Which would work Inline or Internal or external</h3>
+    <!-- Here we can see that inline works when we use both CSS for Same text  -->
+   
+</body>
+</html>

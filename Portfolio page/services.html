@@ -1,0 +1,551 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Victor+Mono:wght@100&display=swap');
+      
+      *{
+          margin: 0;
+          padding: 0;
+      } 
+
+      body{
+          background: url(https://wallpapertag.com/wallpaper/full/4/4/3/350855-website-background-1920x1200-for-4k-monitor.jpg);
+          background-size: cover;
+          color: white;
+          font-family: 'Ubuntu', sans-serif;
+          font-family: 'Victor Mono', monospace;
+          overflow-x: hidden;
+      }
+
+      nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgba(14, 14, 13, 0.626);
+            box-shadow: 0px 2px 10px rgba(21, 21, 18, 0.815);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;  /* It removes the dots from lists */
+            margin: 0 23px;
+            position: relative;
+            right: -10px;
+        } 
+        
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: #07e0fd;
+
+        }
+
+        .top-logo{
+            position: relative;
+            width: 40px;
+            left: -45px;
+        }  
+        
+        .left{
+            position: relative;
+            right: 260px;
+            font-size: 1.5rem;
+        }
+        /* nav ends here, now content */
+
+        .services{
+            position: relative;
+            top: 45px;
+            left: 10px;
+            font-size: 3rem;
+            background-color: rgba(14, 14, 13, 0.626);
+            box-shadow: 0px 2px 10px rgba(21, 21, 18, 0.815);
+        }
+
+        .home-services{
+            position: relative;
+            font-size: 1rem;
+            bottom: 415px;
+            left: 1160px;
+            color: rgb(159, 154, 154);
+        }
+
+        /* Text above Images */
+        .developer-text{
+            position: relative;
+            font-size: 1.8rem;
+            font-style: italic;
+            top: 118px;
+            left: 110px;
+        }
+
+        .designer-text{
+            position: relative;
+            font-size: 1.8rem;
+            font-style: italic;
+            top: 85px;
+            left: 525px;
+        }
+
+        .editor-text{
+            position: relative;
+            font-size: 1.8rem;
+            font-style: italic;
+            left: 933px;
+            top: 50px;
+        }
+
+        /* HTML Developer Images */
+        .html-developer{
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid rgb(59,59,58);
+            background-color: rgb(248, 171, 184); 
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 50px;
+            left: 80px;       
+        }
+
+        .html-logo{
+            position: relative;
+            width: 50px;
+            top: 67px;
+            left: -60px;
+        }
+
+        .html-basics{
+            position: relative;
+            width: 50px;
+            top: 13px;
+        }
+
+        .html-png{
+            width: 50px;
+            position: relative;
+            left: 88px;
+            top: 10px;
+        }
+
+        /* Web Designer Images */
+        .web-designer{
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid rgb(59, 59, 58); 
+            background-color: rgb(242, 147, 242);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: -210px;
+            left: 490px;       
+        }
+
+        .web-design{
+            position: relative;
+            width: 50px;
+            top: 70px;
+            left: 10px;
+        }
+
+        .ui-ux{
+            position: relative;
+            width: 50px;
+            top: 18px;
+        }
+
+        .design{
+            position: relative;
+            width: 50px;
+            top: 18px;
+            left: 18px;
+        }
+
+        /* Video Editing Images */
+        .video-editing{
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid rgb(59, 59, 58);
+            background-color: rgb(234, 183, 90); 
+            width: 200px;
+            height: 200px;
+            position: relative;
+            bottom: 470px;
+            left: 900px;     
+        }
+
+        .video-edit{
+            position: relative;
+            width: 50px;
+            top: 17px;
+        }
+
+        .edits{
+            position: relative;
+            width: 50px;
+            top: 15px;
+            left: 15px;
+        }
+
+        .editing{
+            position: relative;
+            width: 50px;
+            top: 72px;
+            left: 10px;
+        }
+
+
+        /* Footer styling : */
+        footer{
+            background-color: rgba(14, 14, 13, 0.626);
+            height: 200px;
+            box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.815);
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        .relative{
+            position: relative;
+            top:7px;
+        }
+
+        .relative1{
+            position: relative;
+            top:12px;
+        }
+
+        .relative2{
+            position: relative;
+            top:16px;
+        }
+
+        .social-media{
+            font-size: 1.8rem;
+        }
+
+        .ig{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+
+        .fb{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .youtube{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 35px;
+        }
+
+        .twitter{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 45px;
+        }
+
+        .mail-img{
+            width: 25px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .email{
+            font-size: 1.0rem;
+            position: relative;
+            left: 75px;
+            top: 39px;
+        }
+
+        .hr1{
+            position: relative;
+            top: 25px;
+            width: 175px;
+        }
+
+        .portfolio-img{
+            position: relative;
+            width: 40px;
+        }
+
+        .logo{
+            position: relative;
+            width: 25px;
+            top: -23px;
+            left: -30px;
+        }
+
+        .copyright{
+            position: relative;
+            top: 100px;
+            left: -290px;
+            color: black;
+        }
+
+        .year{
+            position: relative;
+            top: 100px;
+            left: -293px;
+            color: black;
+        }
+
+        .copyright-logo{
+            position: relative;
+            width: 13px;
+            height: 13px;
+            top: 103px;
+            left: -380px;
+        }
+
+        /* Content Styling */
+        .content-section{
+            position: relative;
+            top: 110px;
+            left: 130px;
+        }
+
+        /* Horizontal line styling */
+        .hr2{
+            position: relative;
+            top: 90px;
+            width: 1300px;
+            left: -12px;
+        }
+
+        .hr3{
+            position: relative;
+            bottom: 390px;
+            width: 1300px;
+            left: -30px;
+        }
+
+        /* Para Styling */
+        .paragraph{
+            margin: 10px;
+            padding: 20px;
+            height: 140px;
+            position: relative;
+            top: 150px;
+            left: 60px;
+            border: 2px solid black;
+        }
+
+        .para1{
+            position: relative;
+            top: 34px;
+            left: 100px;
+            font-size: 1.6rem;
+        }
+
+        .para2{
+            position: relative;
+            top: -58px;
+            left: 100px;
+            font-size: 1.6rem;
+        }
+
+        .para3{
+            position: relative;
+            top: 26px;
+            left: 100px;
+            font-size: 1.6rem;
+        }
+
+        .button1{
+            position: relative;
+            text-decoration: none;
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 13px;
+            width: 140px;
+            height: 60px;
+            bottom: 337px;
+            left: 246px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 100px;
+            background-color: rgb(245, 83, 110);
+            color: white;
+        }
+
+        .button1:hover{
+            color: black;
+            
+        }
+
+        .button2{
+            text-decoration: none;
+            border: 1px solid gray;
+            position: relative;
+            margin: 10px;
+            padding: 13px;
+            width: 140px;
+            height: 40px;
+            bottom: 338px;
+            left: 450px;
+            border-radius: 30px;
+            font-size: 1rem;
+            background-color: rgb(242, 83, 245);
+            color: white;
+        }
+
+        .button2:hover{
+            color: black;
+        }
+
+        .button3{
+            text-decoration: none;
+            border: 1px solid gray;
+            position: relative;
+            margin: 10px;
+            padding: 13px;
+            width: 140px;
+            height: 40px;
+            bottom: 336px;
+            left: 650px;
+            border-radius: 30px;
+            font-size: 1rem;
+            background-color: rgb(205, 144, 29);
+            color: white;
+        }
+
+        .button3:hover{
+            color: black;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="top-logo" src="https://cdn-icons-png.flaticon.com/128/3308/3308315.png" alt="website logo">
+            <div class="left">Jatin's Portfolio</div>
+            <ul>
+                <li><a target="_blank" href="portfolio.html">Home</a></li>
+                <li><a target="_blank" href="/">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a target="_blank" href="/">Projects</a></li>
+                <li><a target="_blank" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="services">Services</h1>
+    <p class="paragraph">
+    <p class="para1"><strong>>We Bring the Best Design for You</strong></p>
+    <p class="para2"><strong>>We are ready to help you build your websites</strong></p>
+    <p class="para3"><strong>>Let's Make your Videos Looks More Cool...</strong></p>
+    </p>
+
+    <div class="content-section">
+    <hr class="hr2">
+    <h5 class="home-services">Home/Services</h5>
+    <p class="developer-text">HTML Developer</p>
+    <p class="designer-text">Web Designer</p>
+    <p class="editor-text">Video Editor</p>
+
+    <!-- HTML Developer images -->
+    <div class="html-developer"><img src="https://cdn-icons-png.flaticon.com/128/738/738599.png" alt="html developer png 1">
+    <img class="html-logo" src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="html developer png 2">
+    <img class="html-basics" src="https://cdn-icons-png.flaticon.com/128/3194/3194241.png" alt="html developer png 3">
+    <img class="html-png" src="https://cdn-icons-png.flaticon.com/128/10434/10434984.png" alt="html developer png 4">
+    </div>
+
+    <!-- Web Designer Images -->
+    <div class="web-designer"><img src="https://cdn-icons-png.flaticon.com/128/2779/2779775.png" alt="web designer png 1">
+    <img class="web-design" src="https://cdn-icons-png.flaticon.com/128/2621/2621195.png" alt="web designer png 2">
+    <img class="ui-ux" src="https://cdn-icons-png.flaticon.com/128/8407/8407654.png" alt="web designer png 3">
+    <img class="design" src="https://cdn-icons-png.flaticon.com/128/9350/9350364.png" alt="web designer png 4">
+    </div>
+
+    <!-- Video Editing Images -->
+    <div class="video-editing"><img src="https://cdn-icons-png.flaticon.com/128/3074/3074767.png" alt="video editing png 1">
+    <img class="editing" src="https://cdn-icons-png.flaticon.com/128/10111/10111745.png" alt="video editing png 2">
+    <img class="video-edit" src="https://cdn-icons-png.flaticon.com/128/1065/1065278.png" alt="video editing images 3">
+    <img class="edits" src="https://cdn-icons-png.flaticon.com/128/2496/2496843.png" alt="video editing images 4">
+    </div>
+
+    <hr class="hr3">
+    </div>
+
+    <!-- Submit Button -->
+    <a target="_blank" href="hire_form.html" class="button1">Hire For Project</a> <!-- Button 1 -->
+    <a target="_blank" href="hire_form.html" class="button2">Hire For Project</a> <!-- Button 2 -->
+    <a target="_blank" href="hire_form.html" class="button3">Hire For Project</a> <!-- Button 3 -->
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Jatin's Portfolio:</h3>
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/128/3308/3308315.png" alt="logo png">
+            </div>
+            <h5 class="copyright"><i>Copyright</i></h5>
+            <h5 class="year">2023</h5>
+            <img class="copyright-logo" src="https://cdn-icons-png.flaticon.com/128/1627/1627309.png" alt="copyright img">
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li class="relative">About</li>
+                    <li class="relative1">Privacy Policy</li>
+                    <li class="relative2">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Careers</li>
+                    <li class="relative">FAQs</li>
+                    <li class="relative1">Terms of Services</li>
+                    <li class="relative2">Customer Care</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li class="social-media"><strong>Follow Us:</strong></li>
+                   <a target="_blank" href="https://www.instagram.com/jatin.ydv15?igshid=ZDc4ODBmNjlmNQ=="><img class="ig" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="instagram png"></a></li>
+                   <a  target="_blank" href="https://www.facebook.com"><img class="fb" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="facebook png"></a></li>
+                   <a target="_blank" href="https://www.youtube.com/@code-n-fun1464"><img class="youtube" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="youtube png"></a>
+                   <a target="_blank" href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="twitter png" class="twitter"></a>
+                    <hr class="hr1">
+                    <li class="email"><a href="jatinydv1504@gmailcom"></a><strong>Mail Us</strong></li>
+                   <a target="_blank" href="https://mail.google.com"><img class="mail-img" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="email png"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

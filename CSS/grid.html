@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+</head>
+<style>
+
+    /* These are the grid properties for column */
+
+    .container{          /* Grid container Properties */
+        display: grid;
+        grid-template-columns:100px 200px 300px;  
+    }
+
+    div{
+        border: 1px solid black;
+    }
+
+    .container2{         /* Grid auto prperty */ 
+        display: grid;
+        grid-template-columns: auto auto auto; 
+    }
+
+    .container3{         /* Grid repeat(fr) property, here fr is fraction */
+        display: grid;
+        grid-template-columns: repeat(3,1fr); /* Here we use 3 for make 3 columns of equal fraction(Note: If we use 5 on the place of three it will make 5 columns of equal fraction) */
+    }
+
+    .container4{         /* If the size of one element is bigger than others */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .container5{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+   /* These are grid properties for row */
+
+   .container6{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 300px;  /* Here 100px is for Row-1 and 300px is for Row-2 */
+   }
+
+   /* Lets make a layout using grid properties */
+
+   .container7{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header"              /* This are the name which we assign below (Basically we divide the layout into 3 columns and 3 rows) */
+    "sidebar main-content main-content"   /* Sidebar is the first column of second row and the remaining two columns are main content */
+    "footer footer footer";            /* Here in the third row all columns are assigned by footer */
+   }
+
+   .header{
+    grid-area: header;   /* This is for assigning the name to the area of a layout */
+    background: blue;
+   }
+
+   .footer{
+    grid-area: footer;   /* This is for assigning the name to the area of a layout */
+    background: green;
+   }
+
+   .sidebar{
+    grid-area: sidebar;  /* This is for assigning the name to the area of a layout */
+    background: red;
+   }
+
+   .main-content{
+    grid-area: main-content;   /* This is for assigning the name to the area of a layout */
+    background: yellow;
+   }
+
+   .container8{          /* Grid column gap */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+   }
+
+   .container9{          /* Grid row gap */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+   }
+
+   .container10{      /* Grid row-column gap in one line */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px 30px;     /* 20px is for row gap and 30px is for column gap */
+   }
+
+   .container11{     /* Justify-content:center(It will make all the element to the center of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: center;    
+   }
+
+   .container12{     /* Justify-content:start(It will make all the element in the starting part of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: start;    
+   }
+
+   .container13{     /* Justify-content:end(It will make all the element to the end part of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: end;    
+   }
+
+   .container14{     /* Justify-content:space-between(It will make space between  the elements in a container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: space-between;    
+   }
+
+   .container15{     /* Justify-content:space-around(It will make space around the element,not in equal amount) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: space-around;    
+   }
+
+   .container16{     /* Justify-content:space-evenly(It will make space around the element in equal amount) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    justify-content: space-evenly;    
+   }
+
+   .container17{     /* align-content:center(It will make all the element to the center of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: center;    
+   }
+
+   .container18{     /* align-content:start(It will make all the element in the starting part of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: start;    
+   }
+
+   .container19{     /* align-content:end(It will make all the element to the end part of container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: end;    
+   }
+
+   .container20{     /* align-content:space-between(It will make space between  the elements in a container) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: space-between;    
+   }
+
+   .container21{     /* align-content:space-around(It will make space around the element,not in equal amount) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: space-around;    
+   }
+
+   .container22{     /* align-content:space-evenly(It will make space around the element in equal amount) */
+    display: grid;
+    grid-template-columns: repeat(3,150px); /* Here 150px is widht of elements */
+    height: 150px;    /* Here 150px is height of container */
+    align-content: space-evenly;    
+   }
+
+   .container23{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:10px ;
+    justify-items: center;
+   }
+
+   .container24{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:10px ;
+    justify-items: start;
+   }
+
+   .container25{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:10px ;
+    justify-items: end;
+   }
+
+   .container26{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 150px;
+    align-items: center;
+   }
+
+   .container27{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 150px;
+    align-items: start;
+   }
+
+   .container28{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 150px;
+    align-items: end;
+   }
+
+   /* Grid-item properties(In-column): Start and end property in different line code*/
+   .container29{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+   }
+
+   .item1{
+    grid-column-start: 1;  /* Column 1 ke starting se start hoga */
+    grid-column-end: 3;    /* Column 3 ke starting pe end hoga */
+   }
+
+   .item2{
+    grid-column-start: 3;  /* Column 3 ke starting se start hoga and by default end hoga as no space left */
+   }
+
+   .item3{
+    grid-column-start: 1;  /* Column 1 ke starting se start hoga */
+    grid-column-end: 2;   /* Column 2 ke starting pe end hoga */
+   }
+
+   .item4{
+    grid-column-start: 2;  /* Column 2 ke starting se start hoga */
+    grid-column-end: 4;   /* Column 4 ke starting or Column 3 ke end pe end hoga */
+   }
+
+   /* Grid-item start end property in one line code */
+   .container30{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+   }
+
+   .item5{
+    grid-column: 1/2; /* Start from column 1 and, end on starting of column 2  */
+   }
+
+   .item6{
+    grid-column: 2/4; /* Start from column 2 and, end on last of column 3  */
+   }
+
+   .item7{
+    grid-column: 1/3; /* Start from column 1 and, end on starting of column 3  */
+   }
+
+   .item8{
+    grid-column: 3/4; /* Start from column 3 and, end on column 4  */
+   }
+
+   /* Grid-item start-end property in row (in one line code) */
+   .container31{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+   }
+
+   .itema{
+    grid-row: 1/3;  /* Row 1 ke starting se start hoga and row 3 ke starting pe end */
+   }
+
+   .itemc{
+    grid-row: 3/4;   /* Row 3 se start and row 4 ke starting pe end */
+   }
+
+   .itemb{
+    grid-row: 1/2;   /* Row 1 se start and row 2 ke starting pe end */
+   }
+
+   .itemd{
+    grid-row: 2/4;   /* Row 2 se start and row 4 ke starting pe end */
+   }
+
+   /* Grid order property: If 6 items then ordering start from 0 to 5(It can change the position of a particular item) */
+   .container32{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+   }
+
+   .items1{
+    order: 4;   /* Change the position of item 1 from-1 to 4 */
+   }
+
+   .items2{
+    order: 5;   /* Change the position of item 2 from-2 to 5 */
+   }
+
+   .items3{
+    order: 1;   /* Change the position of item 3 from-3 to 2 */
+   }
+
+   .items4{
+    order: 6;   /* Change the position of item 4 from-4 to 6 */
+   }
+
+   .items5{
+    order: 0;   /* Change the position of item 5 from-5 to 1 */
+   }
+
+</style>
+<body>
+
+    <!-- These are the grid properties for column -->
+
+    <!-- Grid container properties -->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Grid auto property: Take space according to size of container -->
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Grid repeat(fraction) property: It helps to fix the size of element in equal fraction -->
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+
+    <!-- What if the size of a element is bigger than the others element: It will shifted to the next line but the size is same for all the elements -->
+    <div class="container4">
+        <div>1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, non lorem ipsum dolor</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut esse aliquam officia eos iure asperiores temporibus ipsa praesentium doloribus non?</div>
+        <div>6</div>
+    </div>
+
+    <!-- What if the the number of elements are odd: The new element move to the next line but the size is same also -->
+    <div class="container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+    <!-- These are the grid properties for row -->
+
+    <!-- Grid row property: To give a particular size to a row -->
+    <div class="container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Now make a layout using grid properties -->
+    <div class="container7">
+        <div class="header">Header</div>
+        <div class="footer">Footer</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main-content</div>
+    </div>
+
+    <!-- Grid column gap: It makes a gap between columns in a grid -->
+    <div class="container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Grid row gap: It makes a gap between row in a grid -->
+    <div class="container9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Here we use grid row-column gap at same time -->
+    <div class="container10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Justify-content in Grid:It includes center,start,end,space-between,space-around and space-evenly(It is for horizontal) -->
+    <div class="container11">  <!-- justify-content:center -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container12">  <!-- justify-content:start -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container13">  <!-- justify-content:end -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container14">  <!-- justify-content:space-between -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container15">  <!-- justify-content:space-around -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container16">  <!-- justify-content:space-evenly -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Align-content in Grid:It includes same properties as justify-content,, but it works on vertical --> 
+    <div class="container17">  <!-- align-content:center -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container18">  <!-- align-content:start -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container19">  <!-- align-content:end -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container20">  <!-- align-content:space-between -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container21">  <!-- align-content:space-around -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container22">  <!-- align-content:space-evenly -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Justify-items in Grid:It will apply on items only but horizontally -->
+    <div class="container23">  <!-- justify-items:center -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container24">  <!-- justify-items:start -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container25">  <!-- justify-items:end -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+     <!-- Align-items in Grid:It will apply on items only but vertically -->
+     <div class="container26">  <!-- align-items:center -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    
+    <div class="container27">  <!-- align-items:start -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="container28">  <!-- align-items:end -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <!-- Grid-Item properties(In-column): First we take start and end property in different line code-->
+    <div class="container29">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+
+    <!-- Grid-item start-end property in one line code-->
+    <div class="container30">
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+
+    <!-- Grid-item properties(In-rows): We take same start-end properties(One line code) -->
+    <div class="container31">
+        <div class="itema">A</div>
+        <div class="itemb">B</div>
+        <div class="itemc">C</div>
+        <div class="itemd">D</div>
+    </div>
+
+    <!-- Grid order property: We can change the order number of a item(Ex-If we have total 6 item the counting start from 0 to 5) -->
+    <div class="container32">
+        <div class="items1">1</div>
+        <div class="items2">2</div>
+        <div class="items3">3</div>
+        <div class="items4">4</div>            
+        <div class="items5">5</div>
+        <div class="items6">6</div>
+    </div>
+    
+</body>
+</html>

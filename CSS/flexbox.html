@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+</head>
+
+<style>
+    .container{
+        display: flex; /* It will change the direction to: left to right (Note: We can also write row in the place of flex */        
+        border: 1px solid green;
+    }
+
+    .items{
+        width: 40px;
+        height: 40px;
+        background-color: yellow;
+        color: blue;
+        border: 1px solid green;
+    }
+
+    /* We can also reverse the row or column direction by applying row-reverse or column-reverse */
+    .container1{
+        display: flex;
+        flex-direction: row-reverse; /* It will reverse the order of row and display all the elements at end(Same for the column-reverse) */
+        border: 2px solid blue;
+    }
+
+    .reverse-items{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        border: 2px solid skyblue;
+    }
+  
+</style>
+<body>
+    <h1>Flexbox in CSS</h1>
+
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <div class="container1">
+        <div class="reverse-items">1</div>
+        <div class="reverse-items">2</div>
+        <div class="reverse-items">3</div>
+        <div class="reverse-items">4</div>
+    </div>
+    
+</body>
+</html>

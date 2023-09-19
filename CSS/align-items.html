@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title> <!-- It contains only top to bottom -->
+
+    <style>
+        
+
+        .align-stretch{
+            display: flex;
+            align-items: stretch;
+            border: 2px solid black;
+            
+        }
+
+        .align-start{
+            display: flex;
+            align-items: start;
+            border: 2px solid red;
+        }
+
+        .align-end{
+            display: flex;
+            align-items: end;
+            border: 2px solid green;
+        }
+
+        .items{
+            width: 40px;
+            height: 40px;
+            color: blue;
+            background-color: yellow;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <p>Align-items:Stretch(Set by deafault)</p>
+    <div class="align-stretch">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Align-Items:Start</p>
+    <div class="align-start">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <p>Align-items:End</p> 
+    <div class="align-end">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+    
+    <p>Align-items:Center</p>
+    <div class="align-center">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+</body>
+</html>

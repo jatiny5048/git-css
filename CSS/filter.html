@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+    div{
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+    }
+
+    /*img{
+        height: 200px;
+        width: 200px;
+        filter: drop-shadow(20px 10px 3px blue) hue-rotate(90deg); }  /* Filter contains many options like invert,brightness,blur,grayscale,hue-rotation,drop-shadow,etc..*/
+
+/* Animation */
+    .box{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: violet;
+        border-radius: 50%;
+        animation: move is ease-in-out 0s 1
+        alternate;
+    }
+    
+    .box1{
+        animation: move is ease-in-out 0s 100
+        alternate;
+    }
+
+    .box2{
+        animation: move is ease-in-out 500ms 100
+        alternate;
+        top: 100px;
+    }
+
+    .box3{
+        animation: move is ease-in-out 1000ms 100
+        alternate;
+        top: 200px;
+    }
+
+    @keyframes move{
+        from{
+            left: 0px;
+        }
+        to{
+            left: 100px;
+        }
+    }
+</style>
+<body>
+   <!-- <div>
+        <img src="https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt="image">
+    </div> -->
+
+    <!-- Animation -->
+    <div class="box"></div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
